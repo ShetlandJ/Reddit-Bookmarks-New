@@ -27,6 +27,7 @@ if (window.location.href.includes("reddit")) {
 
       // Set new bookmark index to be one greater than Edit bookmark
       var bi = i + 1
+      // Call the above function, passing it our new bookmark-index number
       addNewOption(bi)
     }
 
