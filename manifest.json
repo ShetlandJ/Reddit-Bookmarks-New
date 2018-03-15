@@ -2,7 +2,7 @@
 "manifest_version": 2,
     "name": "Add a /new route to your RES Bookmark ",
     "description": "Adding a new button next to Reddit bookmarks",
-    "version": "1.1",
+    "version": "1.2",
     "content_scripts": [
         {
             "matches": [
