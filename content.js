@@ -20,16 +20,21 @@ if (window.location.href.includes("reddit")) {
     }
   }
 
-  // Loop through them
-  for (var i = 0; i < bookmarkBar.length; i++) {
-    // We want a process to happen when the following if statement returns true
-    if (bookmarkBar[i].innerText === 'EDIT') {
+  var findEditBookmark = function() {
 
-      // Set new bookmark index to be one greater than Edit bookmark
-      var bi = i + 1
-      // Call the above function, passing it our new bookmark-index number
-      addNewOption(bi)
+    // Loop through them
+    for (var i = 0; i < bookmarkBar.length; i++) {
+      // We want a process to happen when the following if statement returns true
+      if (bookmarkBar[i].innerText === 'EDIT') {
+
+        // return the index one greater than 'EDIT' and stop the process.
+        return i + 1
+        break;
+      }
+
     }
-
   }
+
+  var index = findEditBookmark();
+  addNewOption(index);
 }
