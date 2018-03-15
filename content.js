@@ -4,8 +4,10 @@ if (window.location.href.includes("reddit")) {
   // Get all bookmarks along the top row
   var bookmarkBar = document.getElementsByClassName('subbarlink');
 
+  // Function that we call later
   var addNewOption = function(bi) {
 
+    // Loop through the bookmarked subreddits.
     for (var index = bi ; index < bookmarkBar.length; index++) {
       // Create a new a element
       var a = document.createElement('a')
