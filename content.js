@@ -6,7 +6,6 @@ if (window.location.href.includes("reddit")) {
 
   // Function that we call later
   var addNewOption = function(bi) {
-
     // Loop through the bookmarked subreddits.
     for (var index = bi ; index < bookmarkBar.length; index++) {
       // Create a new a element
@@ -21,7 +20,6 @@ if (window.location.href.includes("reddit")) {
   }
 
   var findEditBookmark = function() {
-
     // Loop through them
     for (var i = 0; i < bookmarkBar.length; i++) {
       // We want a process to happen when the following if statement returns true
