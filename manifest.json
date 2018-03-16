@@ -1,6 +1,7 @@
 {
 "manifest_version": 2,
     "name": "RES New Queue Bookmarker",
+    "short_name": "RESTab",
     "description": "Adding a new button next to Reddit bookmarks",
     "author": "james@jastewart.co.uk",
     "version": "1.3",
