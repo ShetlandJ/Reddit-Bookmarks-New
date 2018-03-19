@@ -23,11 +23,7 @@ if (window.location.href.includes("reddit")) {
     // Loop through them
     for (var i = 0; i < bookmarkBar.length; i++) {
       // We want a process to happen when the following if statement returns true
-<<<<<<< HEAD
       if (bookmarkBar[i].innerText === 'EDIT' || bookmarkBar[i].innerText === 'edit' || bookmarkBar[i].innerText === 'Edit') {
-=======
-      if (bookmarkBar[i].innerText === 'EDIT') {
->>>>>>> 0b9379990833b65ce7a12d76ff1927211629345a
         // return the index one greater than 'EDIT' and stop the process.
         return i + 1
         break;
